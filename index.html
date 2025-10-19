@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <article
+        class="profile-card"
+        data-testid="test-profile-card"
+        aria-label="User profile card"
+      >
+        <figure class="avatar">
+          <img
+            src="/images/avatar.jpg"
+            alt="User Avatar"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <section class="profile-info">
+          <header>
+            <h2 data-testid="test-user-name">MaryJane Ashinedu</h2>
+          </header>
+
+          <p data-testid="test-user-bio">
+            I’m a frontend developer, building clean interfaces and smooth user
+            experiences. I love turning ideas into functional, beautiful apps —
+            and learning something new with every project.
+          </p>
+
+          <p class="time">
+            Current time in milliseconds:
+            <span data-testid="test-user-time" id="user-time"></span>
+          </p>
+
+          <nav aria-label="Social links">
+            <ul class="social-links" data-testid="test-user-social-links">
+              <li>
+                <a
+                  href="https://github.com/MhayreeJhaine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/Mhayree_Jhaine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                >
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/maryjane-ashinedu-ngozi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                >
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section aria-labelledby="hobbies-heading">
+            <h3 id="hobbies-heading">Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Melomaniac</li>
+              <li>Crochet</li>
+              <li>Anime</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="dislikes-heading" class="dislikes">
+            <h3 id="dislikes-heading">Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Phone calls</li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
