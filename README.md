@@ -6,7 +6,7 @@ A responsive, accessible **Profile Card** built using **semantic HTML, modern CS
 
 ## 🖼️ Preview
 
-![Profile Card Preview]('/images/MJ's profile-card.png')
+![Profile Card Preview]('/images/profile-card.png')
 
 ---
 
