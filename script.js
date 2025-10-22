@@ -8,6 +8,19 @@ updateTime();
 // Optional: Update every second for realism
 setInterval(updateTime, 1000);
 
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-bar a");
+  const currentPath = window.location.pathname;
+
+  navLinks.forEach((link) => {
+    if (currentPath === link.getAttribute("href")) {
+      link.parentElement.classList.add("active");
+    } else {
+      link.parentElement.classList.remove("active");
+    }
+  });
+});
+
 // FORM VALIDATION
 const form = document.getElementById("contact-form");
 const successPopup = document.getElementById("test-contact-success");
