@@ -1,0 +1,107 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header p {
+  color: #828fab;
+  font-size: 1rem;
+}
+
+.contact-form {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-bottom: 10px;
+}
+
+.form-input {
+  background-color: transparent;
+  padding: 0.7rem;
+  outline: none;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.required {
+  color: #c90e0e;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn {
+  /* position: relative;
+  overflow: hidden; */
+  width: 100%;
+  padding: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #3b82f6;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  background: rgba(177, 201, 240, 0.2);
+  /* "to left" / "to right" - affects initial color */
+  /* background: linear-gradient(
+      to left,
+      rgba(177, 201, 240, 0.2) 50%,
+      #3b82f6 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.7s ease-in; */
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3b82f6;
+  /* background-position: left; */
+}
+
+.error-message {
+  color: #c90e0e;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.success-popup {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
