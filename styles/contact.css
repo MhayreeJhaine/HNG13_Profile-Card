@@ -27,7 +27,7 @@
   font-size: 1rem;
 }
 
-.contact-form {
+#contact-form {
   padding: 2rem 0;
   width: 100%;
 }
@@ -90,8 +90,7 @@
   margin-top: 4px;
 }
 
-.success-popup {
-  display: none;
+#success-popup {
   position: fixed;
   top: 20px;
   left: 50%;

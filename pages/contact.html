@@ -9,6 +9,10 @@
   </head>
   <body>
     <main data-testid="test-contact-page">
+      <!-- ✅ Success popup -->
+      <div data-testid="test-contact-success" id="success-popup">
+        <p id="success-message"></p>
+      </div>
       <nav class="nav-bar">
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -25,11 +29,8 @@
           </p>
         </section>
 
-        <!-- ✅ Success popup -->
-        <div id="test-contact-success" class="success-popup"></div>
-
         <!-- ✅ Form -->
-        <form aria-label="Contact form" class="contact-form" id="contact-form">
+        <form aria-label="Contact form" id="contact-form">
           <!-- Name -->
           <div class="input-wrapper">
             <label for="contact-name"
@@ -41,10 +42,9 @@
               class="form-input"
               placeholder="John Harris Doe"
               data-testid="test-contact-name"
-              required
               aria-required="true"
             />
-            <p id="test-contact-error-name" class="error-message"></p>
+            <p data-testid="test-contact-error-name" class="error-message"></p>
           </div>
 
           <!-- Email -->
@@ -61,7 +61,7 @@
               required
               aria-required="true"
             />
-            <p id="test-contact-error-email" class="error-message"></p>
+            <p data-testid="test-contact-error-email" class="error-message"></p>
           </div>
 
           <!-- Subject -->
@@ -78,7 +78,10 @@
               required
               aria-required="true"
             />
-            <p id="test-contact-error-subject" class="error-message"></p>
+            <p
+              data-testid="test-contact-error-subject"
+              class="error-message"
+            ></p>
           </div>
 
           <!-- Message -->
@@ -96,7 +99,10 @@
               required
               aria-required="true"
             ></textarea>
-            <p id="test-contact-error-message" class="error-message"></p>
+            <p
+              data-testid="test-contact-error-message"
+              class="error-message"
+            ></p>
           </div>
 
           <button class="btn" data-testid="test-contact-submit">
@@ -106,6 +112,6 @@
       </article>
     </main>
 
-    <script src="/script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
